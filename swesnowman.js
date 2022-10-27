@@ -1,3 +1,4 @@
+//intro section
 const header = document.querySelector(".intro");
 const intro = `
 <h1>Olof Persson</h1>
@@ -5,6 +6,12 @@ const intro = `
 
 `
 header.innerHTML = intro;
-header.querySelector("h1").style.textAlign = "center";
-header.querySelector("p").style.textAlign = "center";
+//styling
+const introheader = header.querySelector("h1");
+introheader.style.textAlign = "center";
+introheader.style.fontSize = "10pc";
+const introparagraph = header.querySelector("p");
+introparagraph.style.textAlign = "center";
+introparagraph.style.fontSize = "4pc";
+
 
