@@ -10,6 +10,7 @@ header.innerHTML = intro;
 const introheader = header.querySelector("h1");
 introheader.style.textAlign = "center";
 introheader.style.fontSize = "10pc";
+introheader.style.backgroundColor = "lightyellow"
 const introparagraph = header.querySelector("p");
 introparagraph.style.textAlign = "center";
 introparagraph.style.fontSize = "4pc";
