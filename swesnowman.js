@@ -5,5 +5,5 @@ const html = `
 
 `
 header.innerHTML = html;
-const backgrounds = document.querySelector(".intro");
-backgrounds.style.background = "green";
+const backgrounds = document.querySelector("h1");
+backgrounds.style.color = "green";
