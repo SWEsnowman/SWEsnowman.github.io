@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React, { useEffect } from 'react';
+//import Navbar from './components/Navbar';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
+import Projects from './components/Projects.jsx';
+import Skills from './components/Skills.jsx';
+//import MyCal from './components/mycal/MyCal';
+import JobExperience from './components/JobExperience.jsx';
+//import { logPageView } from './gtag'; // Import the GA functions
+import {Card } from '@mui/material'
 function App() {
-  const [count, setCount] = useState(0)
+  // useEffect(() => {
+  //   logPageView();
+  // }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+      <main className="text-gray-400 bg-gray-900 body-font block">
+        <a href="#main-content" className="sr-only focus:not-sr-only">
+          Skip to main content
         </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+        {/* <Navbar /> */}
+        <section className="py-12 px-4">
+          <About />
+        </section>
+        <section className="py-12 px-4">
+          <Projects />
+        </section>
+        <section className="py-12 px-4">
+          <Skills />
+        </section>
+        <section className="py-12 px-4">
+          <JobExperience />
+        </section>
+        <section className="py-12 px-4">
+          <Contact />
+        </section>
+      </main>
+  );
 }
 
 export default App
